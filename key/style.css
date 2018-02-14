@@ -1,0 +1,155 @@
+*{
+	box-sizing: border-box;
+}
+body, html, .wrapper{
+	height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:active,
+a:focus {
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:hover,
+a:focus {
+    color: #323232;
+}
+
+a:hover,
+.btn,
+.btn:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a img,
+iframe {
+    border: none !important;
+}
+
+p {
+    margin: 0;
+    line-height: 22px;
+    color: #7e7e7e;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.wrapper{
+	background: url(img/background.jpg) no-repeat scroll center center / cover;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+
+.wrapper h1{
+	font-size: 40px;
+	color: #fff;
+	line-height: 1.1;
+	display: block;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+}
+.wrapper p{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	line-height: 1.5;
+}
+.key-show h1{
+	color: yellow;
+	font-size: 150px;
+	font-weight: 700;
+}
+.key-show{
+	text-align: center;
+}
+.keys{
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+.key{
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+	height: 80px;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, .4);
+	border-radius: 5px;
+	margin: 5px;
+	border: 2px solid  #000;
+	transition: all 300ms ease;
+	transform: scale(1);
+	text-transform: uppercase;
+	padding: 10px 15px;
+
+}
+
+.playing{
+	background-color: rgba(0, 0, 0, 1);
+	border-color: #f00;
+	transform: scale(1.1);
+}
